@@ -55,12 +55,14 @@ export default async function Post({
       </div>
       <div className="w-full h-72 relative">
         {thumbnail ? (
-          <Image
-            src={thumbnail}
-            alt={title}
-            fill
-            className="object-cover object-center rounded-md"
-          />
+          <Link href={thumbnail}>
+            <Image
+              src={thumbnail}
+              alt={title}
+              fill
+              className="object-cover object-center rounded-md"
+            />
+          </Link>
         ) : (
           <Image
             src="/thumbnail-placeholder.png"
