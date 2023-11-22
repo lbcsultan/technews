@@ -21,7 +21,8 @@ export default async function Home() {
   const posts = await getPosts()
   return (
     <>
-      <CategoriesList />
+      <h1>Hello world</h1>
+      {/* <CategoriesList />
       {posts && posts.length > 0 ? (
         posts.map((post) => (
           <Post
@@ -39,7 +40,7 @@ export default async function Home() {
         ))
       ) : (
         <div className="py-6">No posts to display</div>
-      )}
+      )} */}
     </>
   )
 }
